@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1366, height=768, user-scalable=yes">
+  <title>Desa Bonomerto</title>
+  <link rel="icon" type="image/x-icon" href="web-bonomertoin/asset/LogoBNMRTHD.png" />
+  <link rel="stylesheet" href="web-bonomertoin/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Top bar text -->
+  <div class="topbar">
+    "Desa Anti Korupsi"
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="web-bonomertoin/asset/LogoBonomertoLandscape.png" alt="Desa Bonomerto">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">BERANDA</a></li>
+    <!-- HALAMAN Dropdown -->
+    <li class="dropdown" id="halamanDropdown">
+      <a href="javascript:void(0);" onclick="toggleDropdown('halaman')">
+        HALAMAN <span id="dropdownArrowHalaman" style="color:#ffcc00;">▼</span>
+      </a>
+      <ul class="dropdown-menu" id="dropdownMenuHalaman">
+        <li><a href="#TentangBonomerto">Tentang Bonomerto</a></li>
+        <li><a href="#Potensi">Potensi</a></li>
+        <li><a href="#Peta">Peta</a></li>
+        <li><a href="#Dusun">Dusun</a></li>
+        <li><a href="#Infrastruktur">Infrastruktur</a></li>
+      </ul>
+    </li>
+
+
+        <li><a href="#video">VIDEO</a></li>
+
+        <!-- DUSUN Dropdown -->
+        <li class="dropdown" id="dusunDropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown('dusun')">
+            DUSUN <span id="dropdownArrowDusun" style="color:#ffcc00;">▼</span>
+          </a>
+          <ul class="dropdown-menu" id="dropdownMenuDusun">
+            <li><a href="#Krajan">Krajan</a></li>
+            <li><a href="#Ngaglik">Ngaglik</a></li>
+            <li><a href="#Gedong">Gedong</a></li>
+            <li><a href="#KarangDawung">Karang Dawung</a></li>
+            <li><a href="#Mesu">Mesu</a></li>
+            <li><a href="#Jaten">Jaten</a></li>
+          </ul>
+        </li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#kontak">KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="company-profile">Desa Bersahaja</p>
+      <h1>Desa Bonomerto</h1>
+      <p class="tagline">"Desa Anti Korupsi"</p>
+      <a href="company-profile.html" class="btn">MORE INFO!</a>
+    </div>
+  </section>
+
+ <!-- About Section -->
+<section class="info-section" data-aos="fade-up"> 
+  <h2 class="info-title">Bidang Potensi Desa </h2>
+  <div class="info-cards" id="Potensi">
+
+    <!-- Card 1: Pertanian -->
+    <div class="info-card" id="tentang" data-aos="fade-up">
+      <img src="web-bonomertoin/asset/pertanian.jpg" alt="Tentang Bonomerto" class="info-image">
+      <h3>Pertanian</h3>
+      <p>Pertanian menjadi sektor utama di Desa Bonomerto. Mayoritas warga bermata pencaharian sebagai petani dengan komoditas berupa padi yang tumbuh subur di lahan persawahan yang luas dan subur.</p>
+      <a href="pertanian.html" class="btn more-info-btn">MORE INFO!</a>
+    </div>
+
+    <!-- Card 2: Perkebunan -->
+    <div class="info-card" id="perkebunan" data-aos="fade-up">
+      <img src="web-bonomertoin/asset/kebunjagung.jpeg" alt="Tim Kami" class="info-image">
+      <h3>Perkebunan</h3>
+      <p>Perkebunan di Desa Bonomerto didominasi oleh tanaman singkong dan jagung. Kedua komoditas ini banyak ditanam oleh warga sebagai sumber penghasilan utama, dengan hasil yang melimpah setiap musimnya.</p>
+      <a href="perkebunan.html" class="btn more-info-btn">MORE INFO!</a>
+    </div>
+
+    <!-- Card 3: Perikanan -->
+    <div class="info-card" id="perikanan" data-aos="fade-up">
+      <img src="web-bonomertoin/asset/tambaklele.jpeg" alt="Our Value" class="info-image">
+      <h3>Perikanan</h3>
+      <p>Bidang perikanan di Desa Bonomerto berkembang pesat, terutama budidaya ikan lele. Kegiatan ini menjadi alternatif sumber penghasilan masyarakat sekaligus mendukung ketahanan pangan desa.</p>
+      <a href="perikanan.html" class="btn more-info-btn">MORE INFO!</a>
+    </div>
+
+    <!-- Card 4: Industri -->
+    <div class="info-card" id="industri" data-aos="fade-up">
+      <img src="web-bonomertoin/asset/pabriktahu.jpeg" alt="Industri" class="info-image">
+      <h3>Industri</h3>
+      <p>Sektor industri di Desa Bonomerto meliputi industri rumah tangga seperti pembuatan tahu, tempe, dan home bakery. Kegiatan ini menjadi wujud kreativitas warga dalam mengolah sumber daya desa menjadi produk bernilai jual tinggi.</p>
+      <a href="Industri.html" class="btn more-info-btn">MORE INFO!</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- Company Overview Section -->
+  <section class="company-overview" style="background: url('web-bonomertoin/asset/Lapangan\ bola\ bonomerto.jpg ') no-repeat center center/cover;">
+    <div class="company-container" id="TentangBonomerto">
+      <div class="company-left" data-aos="fade-right">
+       <h2>Welcome!!!</h2>
+Selamat Datang di Website Potensi Desa Bonomerto<br>
+Kami dengan bangga menyambut Anda di Desa Bonomerto, Kecamatan Suruh, Kabupaten Semarang — sebuah desa yang terus berinovasi, gotong royong, dan menjunjung tinggi kearifan lokal.<p></p>
+
+<p>Desa Bonomerto memiliki visi untuk menjadi desa yang mandiri, berdaya saing, dan berintegritas tinggi melalui pengembangan potensi lokal, inovasi teknologi, serta pelibatan aktif masyarakat dalam setiap proses pembangunan.</p>
+
+<p>Misi kami meliputi peningkatan kesejahteraan masyarakat melalui sektor pertanian, industri kreatif, dan teknologi digital; memperkuat tata kelola desa yang transparan dan akuntabel; serta menjaga kelestarian lingkungan demi keberlanjutan generasi mendatang.</p>
+
+<p>Selain itu, Desa Bonomerto berkomitmen sebagai <strong>Desa Anti Korupsi</strong> — mengedepankan nilai kejujuran, tanggung jawab, dan keterbukaan dalam setiap pelayanan publik. Dengan semangat kebersamaan dan integritas, kami percaya bahwa pembangunan desa yang bersih dan transparan akan membawa kemajuan nyata bagi seluruh warga.</p>
+
+        <a href="#" class="btn more-btn">MORE INFO!</a>
+      </div>
+
+      <div class="company-right" data-aos="fade-left">
+        <h3>VISI</h3>
+          <p>
+            Dengan mempertimbangkan kondisi dan permasalahan serta kebutuhan yang dihadapi oleh masyarakat 6 (enam) tahun ke depan, maka ditetapkan Visi Pembangunan Jangka Menengah Kabupaten Semarang Tahun 2020-2026 sebagai berikut:
+          </p>
+          <p><strong>MENINGKATKAN SUMBER DAYA MANUSIA (SDM) DEMI TERWUJUDNYA DESA BONOMERTO YANG MAJU, SEJAHTERA, BERPRESTASI, BERBUDAYA DAN BERAHLAQ MULIA</strong></p>
+
+          <h3>MISI</h3>
+          <p>
+            Guna mewujudkan visi tersebut, misi yang akan ditempuh oleh Pemerintah Desa Bonomerto adalah sebagai berikut:
+          </p>
+          <ul>
+            <li>Memberdayakan semua potensi yang ada di masyarakat yang meliputi: pemberdayaan Sumber Daya Manusia (SDM), pemberdayaan Sumber Daya Alam (SDA), serta pemberdayaan pertanian, ekonomi kerakyatan, dan ekonomi kreatif dan jasa.</li>
+            <li>Mewujudkan dan meningkatkan tata kelola pemerintahan desa yang baik, modern, efektif, efisien, dan bermoral.</li>
+            <li>Mewujudkan keamanan dan ketertiban di lingkungan Desa Bonomerto.</li>
+            <li>Meningkatkan kesehatan, kebersihan desa, serta mengusahakan jaminan kesehatan masyarakat melalui program pemerintah.</li>
+            <li>Optimalisasi penyelenggaraan pemerintahan Desa Bonomerto yang meliputi:
+              <ul>
+                <li>Melaksanakan prinsip tata pemerintahan desa yang akuntabel, transparan, profesional, efektif, efisien, bersih, serta bebas dari kolusi, korupsi, dan nepotisme.</li>
+              </ul>
+            </li>
+            <li>Memberikan pelayanan kepada masyarakat yang prima, yaitu cepat, tepat, dan benar.</li>
+            <li>Melaksanakan pembangunan yang berkesinambungan dan mengedepankan partisipasi serta gotong royong masyarakat.</li>
+            <li>Meningkatkan sarana dan prasarana dari segi fisik, ekonomi, pendidikan, kesehatan, dan kebudayaan di desa.</li>
+            <li>Meningkatkan kehidupan yang harmonis, toleran, dan saling menghormati dalam kehidupan berbudaya dan beragama di Desa Bonomerto.</li>
+            <li>Mengedepankan kejujuran dan keadilan dalam kehidupan sehari-hari, baik dalam pemerintahan maupun dalam hubungan dengan masyarakat desa.</li>
+          </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- garis Section -->
+  <section class="garis-banner">
+    <div class="garis-container">
+      <div class="garis-left">
+        <h2>Desa Bonomerto</h2>
+        <p><em>"Desa Bersahaja"</em></p>
+      </div>
+      <div class="hero-right">
+        <a href="https://drive.google.com/file/d/1K-jQ2TK8a-ZVrW8306u92CwV0FUDpHsS/view?usp=sharing" class="hero-button" target="_blank">
+          <i>Profil Desa</i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <!-- Mapping Section -->
+  <section class="mapping-section" id="Peta">
+      <div class="legalitas-title" >
+        <h2>MAPPING POTENSI DESA BONOMERTO</h2>
+      <img src="web-bonomertoin/asset/mapping bonomerto.png" alt="Mapping Potensi Desa Bonomerto" class="mapping-logo"> 
+    </div>
+  </section>
+
+
+    <!-- Portfolio Video Section -->
+  <section class="portfolio-video-section" id="video">
+    <div class="portfolio-overlay">
+      <h4>Video</h4>
+      <h2>JINGLE DESA BONOMERTO</h2>
+
+      <div class="video-wrapper">
+        <video controls poster="web-bonomertoin/asset/BGVIDBONOMERTO.png">
+          <source src="web-bonomertoin/asset/masjidkarangdawung.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+    <!-- Dusun Section -->
+  <section class="dusun-section" id="Dusun">
+    <div class="container">
+      <h3>Dusun Desa Bonomerto</h3>
+      <h2>DUSUN</h2>
+
+      <div class="dusun-grid">
+        <!-- 1 -->
+        <div class="dusun-card" style="background-image: url('web-bonomertoin/asset/masjidkrajan.jpg');">
+          <div class="overlay" id="Krajan">
+            <h4>KRAJAN</h4>
+            <a href="Krajan.html">MORE INFO</a>
+          </div>
+        </div>
+        <!-- 2 -->    
+        <div class="dusun-card" style="background-image: url('web-bonomertoin/asset/masjidngaglik.jpg');">
+          <div class="overlay" id="Ngaglik">
+            <h4>NGAGLIK</h4>
+            <a href="Ngaglik.html">MORE INFO</a>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="dusun-card" style="background-image: url('web-bonomertoin/asset/masjidkarangdawung.jpg');">
+          <div class="overlay" id="KarangDawung">
+            <h4>KARANG DAWUNG</h4>
+            <a href="KarangDawung.html">MORE INFO</a>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="dusun-card" style="background-image: url('web-bonomertoin/asset/masjid\ gedong.jpg  ');">
+          <div class="overlay" id="Gedong">
+            <h4>GEDONG</h4>
+            <a href="Gedong.html">MORE INFO</a>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="dusun-card" style="background-image: url('web-bonomertoin/asset/Mushola\ Baitullah\ jaten.jpg');">
+          <div class="overlay" id="Jaten">
+            <h4>JATEN</h4>
+            <a href="Jaten.html">MORE INFO</a>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="dusun-card" style="background-image: url('web-bonomertoin/asset/Mushola\ Nurul\ Huda\ Mesu.jpg');">
+          <div class="overlay" id="Mesu">
+            <h4>MESU</h4>
+            <a href="Mesu.html">MORE INFO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Sapras Section -->
+  <section class="sapras-section" id="Infrastruktur">
+    <div class="sapras-title">
+      <h2>Peta Persebaran Infrastruktur Desa Bonomerto</h2>
+      <img src="web-bonomertoin/asset/sarpras bonomerto.png" alt="Sapras Desa Bonomerto" class="sapras-logo">
+    </div>
+
+    <div class="sapras-description" data-aos="fade-up">
+      <p>Peta ini menggambarkan distribusi berbagai fasilitas dan infrastruktur yang ada di Desa Bonomerto, Kecamatan Suruh, Kabupaten Semarang. Beberapa elemen yang ditunjukkan pada peta ini antara lain:</p>
+      <ul>
+        <li><strong>Dusun-Dusun</strong>: Menampilkan lokasi setiap dusun yang ada di Desa Bonomerto, seperti Mesu, Gedong, Karang Dawung, Rajan, dan Ngalik.</li>
+        <li><strong>Fasilitas Umum</strong>: Termasuk kantor balai desa, sekolah, posyandu, dan masjid yang berada di desa.</li>
+        <li><strong>Infrastruktur</strong>: Menunjukkan jalan lokal, sungai, dan pemukiman yang penting dalam mendukung aktivitas masyarakat di desa.</li>
+        <li><strong>Pertanian dan Perkebunan</strong>: Area perkebunan dan sawah yang menjadi sumber utama mata pencaharian masyarakat desa juga terlihat jelas di peta ini.</li>
+      </ul>
+      <p>Peta ini diharapkan dapat memberikan gambaran menyeluruh mengenai keadaan desa, serta menjadi sumber informasi penting untuk perencanaan dan pengembangan desa yang lebih baik.</p>
+    </div>
+  </section>
+
+
+ <!-- Hero   Section -->
+  <section class="hero-banner">
+    <div class="hero-container">
+      <div class="hero-left">
+        <h2>Desa Bonomerto</h2>
+        <p><em>"Desa Anti Korupsi"</em></p>
+      </div>
+      <div class="hero-right">
+        <a href="https://drive.google.com/drive/folders/1dBokH9pS1031VljdcXlNfC0tx8QlMORz" class="hero-button" target="_blank">
+          <i>Peraturan Desa</i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Logo Bonomerto -->
+  <section class="client-section">
+    <div class="client-container" id="klien">
+      <div class="client-wrapper">
+        <div class="client-title">
+          <p>LOGO</p>
+          <h2>Desa Bonomerto</h2>
+        </div>
+        <div class="client-logos">
+          <img src="web-bonomertoin/asset/LogoBonomertoNoBG.png" alt="Klien IBASA">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="contact-top">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h2>DESA BONOMERTO</h2>
+        <p>Hubungi kami melalui email, telepon, atau WhatsApp</p>
+      </div>
+      <div class="contact-right">
+        <a href="https://wa.me/62818345654" class="whatsapp-button" target="_blank">
+          <img src="web-bonomertoin/asset/Whatsapp-icon.png" alt="WhatsApp" class="wa-icon" />
+          WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>DESA BONOMERTO</h3>
+        <img src="web-bonomertoin/asset/LogoBonomertoLandscape.png" alt="Desa Bonomerto" class="footer-logo">
+        <p>
+Selamat Datang di Desa Bonomerto
+Kami dengan bangga menyambut Anda di Desa Bonomerto, Kecamatan Suruh, Kabupaten Semarang — sebuah desa yang terus berinovasi, gotong royong, dan menjunjung tinggi kearifan lokal.
+        </p>
+      </div>
+
+      <div class="footer-col" id="blog">
+        <h3>BLOG TERBARU</h3>
+        <p>Salam Anti Korupsi!</p>
+      </div>
+
+      <div class="footer-col" id="kontak">
+        <h3>INFO KONTAK</h3>
+        <p><strong>Hubungi kami melalui email, telepon, atau whatsapp</strong></p>
+        <p><i class="fa fa-map-marker"></i>Jl. Bonomerto, Kecamatan Suruh, Kabupaten Semarang</p>
+        <p><i class="fa fa-whatsapp"></i> 085712228156</p>
+        <p><i class="fa fa-envelope"></i> desabonomerto@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+
+ 
+
+<!-- AOS & JS (Ganti skrip lama dengan ini) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // helper: coba beberapa variasi id dan kembalikan elemen pertama yang valid
+  function getElementByPossibleIds(...ids) {
+    for (const id of ids) {
+      const el = document.getElementById(id);
+      if (el) return el;
+    }
+    return null;
+  }
+
+  function toPascal(str) {
+    if (!str) return str;
+    str = String(str);
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  // safe hide on load
+  window.addEventListener("DOMContentLoaded", function () {
+    const m1 = getElementByPossibleIds('dropdownMenuHalaman', 'dropdownMenuhalaman', 'dropdownMenuhalaman');
+    const m2 = getElementByPossibleIds('dropdownMenuDusun', 'dropdownMenudusun', 'dropdownMenudusun');
+    if (m1) m1.style.display = 'none';
+    if (m2) m2.style.display = 'none';
+  });
+
+  window.addEventListener('scroll', function() {
+  const hero = document.querySelector('.hero');
+  if (window.scrollY > 50) { // kalau sudah scroll 50px ke bawah
+    hero.classList.add('shrink');
+  } else {
+    hero.classList.remove('shrink');
+  }
+});
+
+  function toggleDropdown(type) {
+    // normalisasi input dan bentuk id yang mungkin dipakai di HTML
+    const pascal = toPascal(type);
+    const lower = String(type).toLowerCase();
+
+    const menu = getElementByPossibleIds(
+      'dropdownMenu' + pascal,
+      'dropdownMenu' + lower,
+      'dropdownMen' + pascal // fallback (if you used different naming)
+    );
+
+    const arrow = getElementByPossibleIds(
+      'dropdownArrow' + pascal,
+      'dropdownArrow' + lower
+    );
+
+    // jika elemen tidak ditemukan, hentikan tanpa error
+    if (!menu) return;
+    // Tutup semua menu lain supaya cuma satu terbuka
+    document.querySelectorAll('.dropdown-menu').forEach(m => {
+      if (m !== menu) m.style.display = 'none';
+    });
+
+    // hapus rotate dari panah lain
+    document.querySelectorAll('span[id^="dropdownArrow"]').forEach(a => {
+      if (a !== arrow) a.classList.remove('rotate');
+      if (a !== arrow) a.textContent = '▼';
+    });
+
+    const isVisible = window.getComputedStyle(menu).display === 'block';
+    menu.style.display = isVisible ? 'none' : 'block';
+
+    if (arrow) {
+      // toggle class rotate
+      arrow.classList.toggle('rotate', !isVisible);
+      // juga update simbol supaya terlihat di browser yang tidak men-support transform kecil
+      arrow.textContent = !isVisible ? '▲' : '▼';
+    }
+  }
+
+  function toggleReadMore() {
+    const moreText = document.getElementById("moreText");
+    const dots = document.getElementById("dots");
+    const btn = document.querySelector(".read-more-btn");
+    if (!moreText || !dots || !btn) return;
+
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      moreText.style.display = "inline";
+      dots.style.display = "none";
+      btn.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      dots.style.display = "inline";
+      btn.textContent = "Read More";
+    }
+  }
+
+  // klik di luar -> tutup
+  document.addEventListener("click", function (e) {
+    const halamanDrop = getElementByPossibleIds('halamanDropdown', 'HalamanDropdown', 'halamandropdown');
+    const dusunDrop = getElementByPossibleIds('dusunDropdown', 'DusunDropdown', 'dusundropdown');
+
+    // kalau klik bukan di dalam container dropdown HALAMAN, tutup menu HALAMAN
+    if (halamanDrop && !halamanDrop.contains(e.target)) {
+      const mh = getElementByPossibleIds('dropdownMenuHalaman', 'dropdownMenuhalaman');
+      const ah = getElementByPossibleIds('dropdownArrowHalaman', 'dropdownArrowhalaman');
+      if (mh) mh.style.display = 'none';
+      if (ah) { ah.classList.remove('rotate'); ah.textContent = '▼'; }
+    }
+
+    // kalau klik bukan di dalam container dropdown DUSUN, tutup menu DUSUN
+    if (dusunDrop && !dusunDrop.contains(e.target)) {
+      const md = getElementByPossibleIds('dropdownMenuDusun', 'dropdownMenudusun');
+      const ad = getElementByPossibleIds('dropdownArrowDusun', 'dropdownArrowdusun');
+      if (md) md.style.display = 'none';
+      if (ad) { ad.classList.remove('rotate'); ad.textContent = '▼'; }
+    }
+  });
+</script>
+</body>
+</html>

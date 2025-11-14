@@ -1,0 +1,1104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Or your desired color */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* Container that holds the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* positions it below the button */
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+#dropdownArrowdusun {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color:#ffcc00; /* Make it yellow as you asked */
+}
+
+#dropdownArrowdusun.rotate {
+  transform: rotate(180deg);
+}
+
+#dropdownArrowHalaman {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color:#ffcc00; /* Make it yellow as you asked */
+}
+
+#dropdownArrowHalaman.rotate {
+  transform: rotate(180deg);
+}
+ .rotate {
+    transform: rotate(180deg);
+    transition: transform 0.25s ease;
+    display: inline-block; /* pastikan bisa di-rotate */
+  }
+#dropdownArrowHalaman,
+#dropdownArrowDusun {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+.rotate {
+    transform: rotate(180deg);
+  }
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%; /* ⬅️ biar tinggi menyesuaikan isi */
+  overflow: hidden; /* ⬅️ cegah scroll horizontal */
+  background-image: url('../asset/HomePic.jpg');
+  background-size: cover; /* ⬅️ isi area tanpa distorsi */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px; /* kamu bisa ubah sesuai kebutuhan */
+  color: white;
+}
+
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 70px !important;
+  font-weight: bold;
+  white-space: nowrap;   /* ⬅️ Biar nggak pindah baris */
+  margin-bottom: 10px;
+}
+
+.company-profile {
+  color: #fdd835;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #fdd835;
+  color: #1c1c1c;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+.company-profile {
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+/* General Info Section Styling */
+.info-section {
+  padding: 60px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.info-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card Styling */
+.info-card {
+  width: 300px; /* Adjust the width of the card */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.info-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Image Styling */
+.info-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Text Styling */
+.info-card h3 {
+  font-size: 18px;
+  margin: 16px;
+  font-weight: bold;
+}
+
+.info-card p {
+  font-size: 14px;
+  padding: 0 16px 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.more-info-btn {
+  display: inline-block;
+  background-color: #fdd835; /* Button color */
+  color: #1c1c1c;
+  padding: 12px 25px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  margin: 10px 16px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.more-info-btn:hover {
+  background-color: #e6b800; /* Darken button on hover */
+}
+
+.more-btn {
+  display: block;
+  background-color: #e0c100;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0 16px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.about-card {
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #004aad;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.read-more-btn:hover {
+  background-color: #003b8f;
+}
+
+.company-overview {
+  padding: 60px 20px;
+  color: white;
+  position: relative;
+}
+
+.company-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.company-left, .company-right {
+  flex: 1 1 45%;
+}
+
+.company-left h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.company-left p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.company-right h3 {
+  color: #ffd700;
+  margin-top: 20px;
+}
+
+.company-right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.company-right li {
+  margin-bottom: 10px;
+}
+
+.company-right p {
+  margin-bottom: 20px;
+}
+
+.company-section {
+  position: relative;
+  padding: 80px 20px;
+  background-image: url('web-bonomertoin\asset\HomePic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  overflow: hidden;
+}
+
+.company-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+
+/* Card Base */
+.card {
+  flex: 1 1 500px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.company-left {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.company-right {
+  background-color: rgba(0, 0, 0, 0.6); /* transparan gelap */
+  color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Styling content */
+.card h2,
+.card h3 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.card p,
+.card ul {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.card ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+.more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #e6b800;
+}
+
+
+.garis-banner {
+  background-color: #3b3b3b;
+  padding: 40px 0;
+  color: white;
+}
+
+.garis-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.garis-left h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.garis-left p {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.garis-button {
+  background-color: #fcd83d;
+  color: black;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.garis-button:hover {
+  background-color: #e6c937;
+}
+
+.hero-banner {
+  background-color: #3b3b3b;
+  padding: 40px 0;
+  color: white;
+}
+
+.hero-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.hero-left h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero-left p {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.hero-button {
+  background-color: #fcd83d;
+  color: black;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-button:hover {
+  background-color: #e6c937;
+}
+
+
+.mapping-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.mapping-title h2 {
+  color: gray;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.mapping-title h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.mapping-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mapping-item {
+  width: 250px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.mapping-item:hover {
+  transform: translateY(-5px);
+}
+
+.mapping-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.mapping-item h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mapping-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.mapping-logo {
+  max-width: 100%;
+  height: auto;
+  width: auto; /* optional: set a preferred max width */
+  display: block;
+  padding-top: 50px;
+  margin: 0 auto 20px auto;
+}
+
+
+.portfolio-video-section {
+  background: url('../asset/BGVideo.png') center center no-repeat;
+  background-size: cover;
+  padding: 80px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.portfolio-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 14px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 900px;
+  width: 100%;
+}
+
+.portfolio-overlay h4 {
+  font-size: 16px;
+  color: #f7d000;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.portfolio-overlay h2 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dusun-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.dusun-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.dusun-section h3 {
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+
+.dusun-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; 
+  margin-top: 0;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.dusun-card {
+  position: relative;
+  width: 100%; 
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.dusun-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.dusun-section h2,
+.dusun-section h3 {
+  text-align: left;
+}
+
+.dusun-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Bagian Informasi Sarana Dusun */
+.dusun-info-section {
+  padding: 130px 80px 60px; /* tambah jarak atas biar gak ketimpa navbar */
+  text-align: center;
+  background-color: #fff;
+}
+
+.dusun-info-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.dusun-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px; /* jarak antar item */
+}
+
+.dusun-info-item {
+  width: 20px; /* perkecil lebar item */
+  text-align: left;
+}
+
+.dusun-info-item img {
+  width: 30%;
+  height: 70px; /* setengah dari sebelumnya */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 25px; /* jarak antara gambar dan teks */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.dusun-info-item p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.overlay a {
+  font-weight: bold;
+  color: #FFD700; /* yellow link */
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.overlay a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Sapras Section Styling */
+.sapras-section {
+  padding: 80px 80px; /* Rata kiri sesuai footer */
+  background: #fff;
+  text-align: left;
+}
+
+
+.sapras-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.sapras-logo {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 40px 0;
+  margin-top: 20px;
+}
+
+.sapras-description {
+  width: 100%; /* Penuh hingga ujung kanan container */
+  margin: 20px 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify; /* Rata kiri-kanan */
+}
+
+.sapras-description p {
+  margin-bottom: 20px;
+}
+
+.sapras-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.sapras-description li {
+  margin-bottom: 10px;
+}
+
+.sapras-description strong {
+  font-weight: bold;
+  color: #fdd835;
+}
+
+.sapras-description ul li {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ===== Perbaikan layout dusunin: gambar kiri, teks kanan ===== */
+
+.dusunin-section {
+  padding: 140px 80px 60px;
+}
+
+.dusunin-description {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.dusunin-description .dusunin-logo {
+  width: 45%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.dusunin-description p {
+  width: 55%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3; /* lebih rapat */
+  color: #444;
+}
+
+/* Judul dalam paragraf (Masjid Dusun) */
+.dusunin-description p strong {
+  display: block;
+  margin-bottom: 1px; /* dari 8px → lebih dekat */
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.dusunin-description br {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .dusunin-description {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .dusunin-description .dusunin-logo,
+  .dusunin-description p {
+    width: 100%;
+  }
+  .dusunin-section {
+    padding: 120px 20px 40px;
+  }
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background-color: #3e3e3e;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-content h3 {
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #dcdcdc;
+  letter-spacing: 1px;
+}
+
+.testimonial-content h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.testimonial-content p {
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.testimonial-content strong {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.client-wrapper {
+  position: relative;
+  display: inline-block; 
+  text-align: left;
+}
+
+.client-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7); /* Optional: improves readability */
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.client-logos img {
+  margin-top: 40px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.contact-top {
+  background-color: #3e3e3e;
+  color: white;
+  padding: 40px 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  flex-wrap: wrap;
+}
+
+.contact-left h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.contact-left p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.contact-right {
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-button {
+  background-color: #fdd835;
+  color: #1c1c1c;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wa-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1 1 30%;
+  min-width: 280px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-col i {
+  margin-right: 8px;
+}
+
+.more-info-button {
+  width: 100px; /* Adjust this value to your desired width */
+  height: 30px; /* Maintain aspect ratio */
+  display: flex; /* Ensures the image behaves like a block element */
+  margin: 1px auto 0 auto; /* Adds some top margin and centers the button */
+}
+
+.more-btn-img img {
+  width: 140px;
+  height: auto;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.more-btn-img img:hover {
+  transform: scale(1.05);
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info-card p {
+  min-height: 180px; /* Prevent shifting when expanding */
+}
+
+/* Hanya styling tombol maps bulat — tambahkan di akhir styles.css */
+.round-map-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 10px 18px;
+  background-color: #5A3E2B; /* warna cokelat agar serasi dengan footer */
+  color: #fff;
+  border-radius: 50px; /* membuat tombol membulat */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #5A3E2B;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.12s ease;
+}
+
+.round-map-btn:hover {
+  background-color: #fff;
+  color: #5A3E2B;
+  transform: translateY(-3px);
+}
+
