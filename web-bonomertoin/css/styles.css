@@ -1102,3 +1102,38 @@ body, html {
   transform: translateY(-3px);
 }
 
+/* ===========================================================
+   FIX TAMPILAN DESKTOP ONLY DI HP (TIDAK MERUSAK DESKTOP)
+   =========================================================== */
+
+@media screen and (max-width: 1024px) {
+
+    /* Paksa lebar desktop */
+    body {
+        width: 1366px !important;
+        overflow-x: scroll !important;
+        overflow-y: auto !important;
+    }
+
+    /* Matikan FULLSCREEN background di mobile */
+    .hero-area,
+    .home-section,
+    .header,
+    .hero,
+    .banner,
+    section {
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: top center !important;
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    /* Hilangkan forced height 100vh di mobile */
+    .hero-area,
+    .hero {
+        height: auto !important;
+    }
+
+}
+
