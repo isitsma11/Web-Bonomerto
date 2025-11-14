@@ -118,7 +118,7 @@ body, html {
 .hero {
   position: relative;
   width: 100vw;
-  height: 45vh;             /* ⬅️ FIX: jadi landscape */
+  min-height: 100vh;        /* ⬅️ FIX: jadi landscape */
   overflow: hidden;
   background-image: url('../asset/HomePic.jpg');
   background-size: cover;
