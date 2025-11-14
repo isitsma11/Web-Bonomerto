@@ -114,14 +114,26 @@ body, html {
 .rotate {
     transform: rotate(180deg);
   }
+
 .hero {
-  width: 1366px;
-  height: 768px;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 45vh; /* ⬅️ tampilan jauh lebih zoom-out di HP */
+  overflow: hidden;
+
+  background-image: url('../asset/HomePic.jpg');
   background-size: cover;
   background-position: center;
-}
+  background-repeat: no-repeat;
 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 20px; /* ⬅️ kecilin, supaya HP tidak zoom-in */
+  box-sizing: border-box;
+}
+  
 
 
 .hero::after {
