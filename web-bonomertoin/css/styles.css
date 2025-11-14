@@ -117,19 +117,21 @@ body, html {
 .hero {
   position: relative;
   width: 100%;
-  height: 100%; /* ⬅️ biar tinggi menyesuaikan isi */
-  overflow: hidden; /* ⬅️ cegah scroll horizontal */
+  height: 100vh; /* ⬅️ Landscape penuh layar */
+  overflow: hidden;
   background-image: url('../asset/HomePic.jpg');
-  background-size: cover; /* ⬅️ isi area tanpa distorsi */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 100px; /* kamu bisa ubah sesuai kebutuhan */
+  padding: 0 40px; /* ⬅️ padding aman (100px terlalu besar) */
   color: white;
+  box-sizing: border-box; /* ⬅️ TAMBAHAN WAJIB, biar padding tidak nambah lebar */
 }
+
 
 
 .hero::after {
