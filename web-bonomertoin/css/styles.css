@@ -116,19 +116,16 @@ body, html {
   }
 
 .hero {
-  position: relative;
-  width: 100vw;
-  height: 45vh;             /* ⬅️ FIX: jadi landscape */
-  overflow: hidden;
-  background-image: url('../asset/HomePic.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;            /* BIAR LANDSCAPE FULLSCREEN */
+    overflow: hidden;         /* Buang bagian yang kepotong */
+}
 
-  display: flex;
-  align-items: flex-end;     /* ⬅️ text turun ke bawah seperti foto 2 */
-  padding: 40px;             /* tidak terlalu besar */
-  color: white;
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* INI YANG BIKIN LANDSCAPE */
+    display: block;           /* Hilangin space putih */
 }
 
 
